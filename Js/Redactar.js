@@ -34,7 +34,7 @@ document.getElementById('Correo').addEventListener('submit', function(event) {
     };
 
     // Enviar una solicitud POST al backend
-    fetch('/Enviar', {
+    fetch('http://localhost:8081/Enviar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
