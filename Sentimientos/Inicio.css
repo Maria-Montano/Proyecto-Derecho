@@ -1,24 +1,49 @@
-.letra{
+.NARPY {
+    position: absolute;
+    /* Para fijar la posición de la imagen */
+    top: 0;
+    /* En la parte superior */
+    right: 50px;
+    /* En el lado izquierdo */
+    width: 6%;
+    /* Ancho deseado */
+    height: auto;
+    /* Altura ajustada automáticamente */
+    z-index: 9999;
+    /* Para asegurarse de que la imagen esté en la parte superior */
+    /*Efecto tridimensional; x,y y Z*/
+    cursor: pointer;
+    background-color: white;
+    border-radius: 100%;
+    background-image: url(/Cara/uni.png);
+    background-size: cover;
+}
+
+
+.letra {
     color: white;
     font-style: italic;
     text-align: center;
 }
+
 /* 
  OPCIONES PARTE SUPERIOR */
-.Opciones{
-    margin-top: 30px;
+.Opciones {
+    margin-top: 10px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
-    background: transparent;    
+    background: transparent;
     border: 1px solid rgba(255, 255, 255, .2);
     border-radius: 50px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
-    backdrop-filter: blur(20px) ;
+    backdrop-filter: blur(20px);
     z-index: 1000;
-} 
+    position: sticky;
+    width: 90%;
+}
 
-body{
+body {
     background-image: url(/Cara/fondo.jpg);
     display: flex;
     justify-content: center;
@@ -27,20 +52,21 @@ body{
     min-height: 100vh;
 }
 
-nav a{
- position: relative; 
- font-size: 1.1em;
- font-weight: 500;
- color: white;
- text-decoration: none;
- padding: 6px 20px;
- transition: 1s;
+nav a {
+    position: relative;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 6px 20px;
+    transition: 1s;
 }
-nav a:hover{
+
+nav a:hover {
     color: #0ef;
 }
 
-nav a span{
+nav a span {
     position: absolute;
     top: 0;
     left: 0;
@@ -54,7 +80,7 @@ nav a span{
     transition: 1s;
 }
 
-nav a:hover span{
+nav a:hover span {
     transform: scale(1) translateY(0);
     opacity: 1;
 }
@@ -63,7 +89,7 @@ nav a:hover span{
 
 /* TEXTO */
 
-.txt{
+.txt {
     margin: 70px;
     text-align: center;
     background: transparent;
@@ -72,11 +98,8 @@ nav a:hover span{
     border: 1px solid rgb(0, 0, 0);
 
 }
+
 /*SEGUNDO*/
-.txt > div:last-child {
+.txt>div:last-child {
     margin: 70px;
 }
-
-
-
-

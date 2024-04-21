@@ -1,24 +1,3 @@
-/*const express = require ('express'); //importar modulos
-
-//crea una instancia express
-const app= express();
-const port=8081;   // PUERTO DEL SERVIDOR
-
-//ruta para el endpoins /registro
-app.post('/registro', (req, res) =>{
-    const Destinatario = req.body.Destinatario;  //el valor que hay en el campo Destinatario del html
-    const Texto = req.body.Texto;  //VALOR DEL TEXTO
-
-    //Enviaremos los datos obtenidos del html
-    res.send('Solicitud recibida. Destinatario' + Destinatario + 'Texto' + Texto);
-});
-
-//Inicia el Servidor 
-app.listen(port, () => {
-    console.log('Servidor en http://localhost:${port} ');
-});
-
-*/
 
 document.getElementById('Correo').addEventListener('submit', function(event) {
     event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada

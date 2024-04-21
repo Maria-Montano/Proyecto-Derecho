@@ -1,3 +1,24 @@
+.NARPY {
+    position: absolute;
+    /* Para fijar la posición de la imagen */
+    top: 0;
+    /* En la parte superior */
+    right: 50px;
+    /* En el lado izquierdo */
+    width: 6%;
+    /* Ancho deseado */
+    height: auto;
+    /* Altura ajustada automáticamente */
+    z-index: 9999;
+    /* Para asegurarse de que la imagen esté en la parte superior */
+    /*Efecto tridimensional; x,y y Z*/
+    cursor: pointer;
+    background-color: white;
+    border-radius: 100%;
+    background-image: url(/Cara/uni.png);
+    background-size: cover;
+}
+
 .letra{
     color: white;
     font-style: italic;
@@ -29,7 +50,7 @@ button::before{
 }
 
 .Opciones{
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
@@ -38,6 +59,7 @@ button::before{
     border-radius: 50px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
     backdrop-filter: blur(20px) ;
+    width: 90%;
 }
 
 

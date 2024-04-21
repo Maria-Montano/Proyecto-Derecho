@@ -7,11 +7,10 @@ window.addEventListener('scroll', () => {
   
     if (window.scrollY >= carruselBottom) {
       navbar.style.position = 'fixed';
-      navbar.style.width= '85%';
+      navbar.style.width= '90%';
       navbar.style.color= 'black';
     }else{
       navbar.style.position = 'initial';
-      navbar.style.width= '100%';
     }
   });
   
